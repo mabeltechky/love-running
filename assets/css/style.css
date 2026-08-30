@@ -136,6 +136,22 @@ hr {
 #cover-text >h2, #cover-text > h3 {
     color:#ffffff;
 }
+/*Reason image*/
+#circle-cover-bg {
+    background: url(../images/reasons-image.webp) no-repeat top center /cover;
+    height:90vw;
+    width: 90vw; 
+    margin-bottom: 20px;
+    /* Make the square image a circle */
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Footer */
 #social-networks {
     text-align:center;
