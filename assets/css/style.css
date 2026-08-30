@@ -133,6 +133,24 @@ hr {
     width:300px;
     right: 50px;
 }
+
+/*Reasons Section*/
+#benefits-physical, #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#benefits-physical >div, #benefis-mentaal > div {
+    width: 75%;
+
+}
+
+#benefits-physical >div {
+    text-align: end;
+    align-self: flex-end;
+}
+
 #cover-text >h2, #cover-text > h3 {
     color:#ffffff;
 }
@@ -164,4 +182,31 @@ hr {
     font-size:160%;
     padding: 5%;
     color: #3a3a3a;
+}
+@media screen and ( min-width:1200px) {
+/*Reasons Section*/
+#benefits {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+#benefits >div {
+    flex:1;
+}
+
+#benefits-image > div {
+    orphans: 0;
+}
+
+#benefits-mental {
+    order: 1;
+}
+
+#benefits-mental > div {
+    align-self:flex-start;
+}
+
+#benefits-physical > div {
+    align-self: flex-end;
 }
