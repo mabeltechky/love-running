@@ -219,7 +219,20 @@ hr {
     padding: 5%;
     color: #3a3a3a;
 }
-@media screen and ( min-width:1200px) {
+
+/*Media Query: Large and landscapes phones (576px and up*/
+@media screen and ( min-width:576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+        
+    
+    }
+}
+
+
+/*Media Query: Tablets and larger (768px and up*/
+@media screen and ( min-width:768px) {
 /*Reasons Section*/
 #benefits {
     display: flex;
@@ -245,4 +258,21 @@ hr {
 
 #benefits-physical > div {
     align-self: flex-end;
+    /*Gallery*/
+    #photos {
+        column-count: 3;
+    }
+}
+/* Large device (laptops and desktops 992px and up*/
+@media screen and (min-width:992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+        /*Gallery*/
+        #photos {
+            column-count: 4;
+
+        }
+        
+    
 }
